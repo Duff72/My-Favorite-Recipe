@@ -1,0 +1,144 @@
+.wings {font-size: 1.2em; color: orangered; font-family: 'Times New Roman', Times, serif;}
+.blue {font-size: 1.2em; color: blue; font-family: 'Times New Roman', Times, serif;}
+#picture {height: 16em; width: 16em; border-radius: 8em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    align-content: center;
+  }
+body {background-color: blanchedalmond;}
+h1{text-align: center; margin-top: 0px;}
+h2{font-family: 'Times New Roman', Times, serif;}
+a:hover {color: red; background-color: aliceblue;}
+
+  #foodInfo{display: flex;
+  flex-direction: column;}
+#nutrition {flex-direction: column;
+  display: flex;  
+  width: 350px; 
+  float: right;
+  background-color: white; 
+  
+}
+#directionsBody {font-family:'Courier New', Courier, monospace; font-size: larger; left; flex-direction: column; width: 790px; float: left; word-wrap: normal; max-width: fit-content;}
+nav{display: flex; justify-content: center; font-family: gabriola;
+   font-size: 2.5em; margin-bottom: 0px; margin-top: 2px;
+  }
+.navP{margin-bottom: 0px;}
+body {margin-top: 0px;}
+
+tr {background-color: white; border-width: 3px; border-color: black;}
+.performance-facts {
+  
+  margin: 20px;
+  float: left;
+  width: 280px;
+  padding: 0.5rem;
+  table {
+    border-collapse: collapse;
+  }
+}
+.performance-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+.performance-facts__table {
+  width: 100%;
+  thead tr {
+    th,
+    td {
+      border: 0;
+    }
+  }
+  th,
+  td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0.25rem 0;
+    border-top: 1px solid black;
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .blank-cell {
+    width: 1rem;
+    border-top: 0;
+  }
+  .thick-row {
+    th,
+    td {
+      border-top-width: 5px;
+    }
+  }
+}
+.small-info {
+  font-size: 0.7rem;
+}
+
+.performance-facts__table--small {
+  @extend .performance-facts__table;
+  border-bottom: 1px solid #999;
+  margin: 0 0 0.5rem 0;
+  thead {
+    tr {
+      border-bottom: 1px solid black;
+    }
+  }
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th,
+  td {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.performance-facts__table--grid {
+  @extend .performance-facts__table;
+  margin: 0 0 0.5rem 0;
+  td {
+    &:last-child {
+      text-align: left;
+      &::before {
+        content: "•";
+        font-weight: bold;
+        margin: 0 0.25rem 0 0;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.thick-end {
+  border-bottom: 10px solid black;
+}
+.thin-end {
+  border-bottom: 1px solid black;
+}
+
+#messageInput{height: 6em; width: 25em; }
+
+#formBoxes{display: flex; flex-direction: column;
+justify-content: space-between;
+align-items: start;}
+
+
